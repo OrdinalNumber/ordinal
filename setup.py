@@ -13,7 +13,10 @@ except IOError:
     readme = ''
 
 def _requires_from_file(filename):
-    return open(filename).read().splitlines()
+    try:
+      return open(filename).read().splitlines()
+    except:
+       return []
 
 # version
 here = os.path.dirname(os.path.abspath(__file__))
