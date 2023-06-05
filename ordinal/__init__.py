@@ -1,1 +1,1 @@
-from Ordinal.Ordinal import *
+from ordinal.ordinal import *
